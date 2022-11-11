@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        legend{
+            text-align: center;
+        }
+        h6{
+            font-size:8px;
+            font-family:serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <h6>não está Completo</h6>
+    <form action="" autocomplete="on">
+       <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" required minlength="10" maxlength="30" placeholder="Nome Completo">
+       </p>
+       <p>
+        <label for="iidade">Idade</label>
+        <input type="number" name="idade" id="iidade" placeholder="Idade" min="0" max="80">
+       </p>
+       <p>
+        <label for="iemail">Email</label>
+        <input type="text" name="email" id="iemail" placeholder="Seu Email" required>
+       </p>
+       <fieldset>
+           <legend>Sexo</legend>
+           <input type="radio" name="sexo" id="isxmax" value="M">
+           <label for="isxmax">Masculino</label>
+           <input type="radio" name="sexo" id="isxfem"
+           value="F">
+           <label for="isxfem">Feminino</label>
+           <p>
+       </fieldset>
+       <fieldset>
+           <legend>Gosta de filmes?</legend>
+           <input type="radio" name="sim" id="isim">
+           <label for="isim">Sim</label>
+           <input type="radio" name="não" id="inão">
+           <label for="inão">Não</label>
+        </fieldset>
+           <fieldset>
+               <legend>Se sim quais seus generos favoritos?</legend>
+                <input type="checkbox" name="ação" id="iação">
+                <label for="iação">Ação</label>
+               <input type="checkbox" name="drama" id="idrama">
+               <label for="idrama">Drama</label>
+               <input type="checkbox" name="terror" id="iterror">
+               <label for="iterror">Terror</label>
+               <input type="checkbox" name="comedia" id="icomedia">
+               <label for="icomedia">Comédia</label>
+               <input type="checkbox" name="romance" id="iromance">
+               <label for="iromance">Romance</label>
+               <input type="checkbox" name="fantasia" id="ifantasia">
+               <label for="ifantasia">Fantasia</label>
+               </p>
+           </fieldset>
+       <p>
+        <label for="idia">Dia que está respondendo o formulário</label>
+        <input type="date" name="dia" id="idia" required value="2022-11-11">
+       </p>
+       <p>
+        <label for="imsg">fale o que achou do teste</label><br>
+        <textarea name="msg" id="imsg" cols="50" rows="5"></textarea>
+       </p>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
